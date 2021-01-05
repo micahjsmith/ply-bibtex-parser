@@ -1,7 +1,3 @@
-import os
-from pathlib import Path
-from shutil import which
-
 from invoke import task
 
 PKG_PATH = "ply_bibtex_parser"

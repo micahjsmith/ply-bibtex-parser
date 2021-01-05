@@ -19,7 +19,7 @@ TODO:
 - skip comments
 """
 
-from .lexer import tokens
+from .lexer import tokens  # noqa
 from .models import BibtexEntry
 
 import ply.yacc as yacc
