@@ -5,7 +5,8 @@ description = ""
 authors = ["Micah Smith <micahjsmith@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
+ply = "^3.11"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
