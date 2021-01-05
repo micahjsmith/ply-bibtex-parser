@@ -4,7 +4,7 @@ PKG_PATH = "ply_bibtex_parser"
 
 
 @task
-def tests(c):
+def test(c):
     """Run the test suite"""
     c.run(f"pytest tests", pty=True)
 

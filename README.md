@@ -58,6 +58,19 @@ for tok in lexer:
 # LexToken(ENTRYEND,'}',1,59)
 ```
 
+## Development
+
+Install
+```
+pip install poetry
+poetry install
+```
+
+Check
+```
+inv test lint
+```
+
 ## Limitations
 
-See the TODO notes in <./ply_bibtex_parser/lexer.py> and <./ply_bibtex_parser/parser.py>.
+See the TODO notes in [./ply_bibtex_parser/lexer.py](./ply_bibtex_parser/lexer.py) and [./ply_bibtex_parser/parser.py](./ply_bibtex_parser/parser.py).
