@@ -9,5 +9,5 @@ from .lexer import lexer
 from .parser import parser
 from .models import BibtexEntry
 
-__version__ = '0.1.0'
-__all__ = ('BibtexEntry', 'lexer', 'parser')
+__version__ = "0.1.0"
+__all__ = ("BibtexEntry", "lexer", "parser")

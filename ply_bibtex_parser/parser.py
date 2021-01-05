@@ -37,35 +37,38 @@ def p_entries_empty(p):
 
 def p_entry(p):
     """entry : AT ID ENTRYBEGIN ID COMMA terms ENTRYEND"""
-    p[0] = BibtexEntry(
-        type=p[2],
-        key=p[4],
-        fields=dict(p[6]),
-    )
+    p[0] = BibtexEntry(type=p[2], key=p[4], fields=dict(p[6]),)
+
 
 def p_terms_term(p):
     """terms : term"""
     p[0] = [p[1]]
 
+
 def p_terms_terms(p):
     """terms : term COMMA terms"""
     p[0] = [p[1], *p[3]]
+
 
 def p_terms_empty(p):
     """terms : empty"""
     p[0] = p[1]
 
+
 def p_empty(p):
     """empty :"""
     p[0] = []
+
 
 def p_term(p):
     """term : key EQUALS value"""
     p[0] = (p[1], p[3])
 
+
 def p_key(p):
     """key : ID"""
     p[0] = p[1]
+
 
 def p_value(p):
     """value : VALUE
