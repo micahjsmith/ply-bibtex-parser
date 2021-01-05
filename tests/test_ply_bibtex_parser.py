@@ -1,11 +1,11 @@
+import pytest
+
 from ply_bibtex_parser import (
-    __version__,
     BibtexEntry,
+    __version__,
     lexer as _lexer,
     parser as _parser,
 )
-
-import pytest
 
 
 def test_version():

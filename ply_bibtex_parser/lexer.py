@@ -9,7 +9,6 @@ TODO:
 
 import ply.lex as lex
 
-
 tokens = (
     "AT",
     "COMMA",

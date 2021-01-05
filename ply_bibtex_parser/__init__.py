@@ -6,8 +6,8 @@ See also:
 - https://web.archive.org/web/20190317074837/http://www.lsv.fr:80/~markey/bibla.php
 """
 from .lexer import lexer
-from .parser import parser
 from .models import BibtexEntry
+from .parser import parser
 
 __version__ = "0.1.0"
 __all__ = ("BibtexEntry", "lexer", "parser")

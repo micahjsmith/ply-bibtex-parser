@@ -19,10 +19,10 @@ TODO:
 - skip comments
 """
 
+import ply.yacc as yacc
+
 from .lexer import tokens  # noqa
 from .models import BibtexEntry
-
-import ply.yacc as yacc
 
 
 def p_entries(p):
